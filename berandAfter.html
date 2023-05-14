@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <script type="text/javascript" src="javascript.js"></script>
 
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="http://maps.googleapis.com/maps/api/js"></script>
 
 
@@ -36,6 +36,7 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <a class="nav-link" id="penanda" href="beranda.html">Beranda<span class="sr-only">(current)</span></a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#">UMKM</a>
           </li>
@@ -45,11 +46,17 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Artikel</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="daftar.html">Daftar</a>
-          </li>
-          <li class="nav-item">
-            <a class="btn btn-edit" href="masuk.html">Masuk</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/profpic.jpg" class="img-circle" width="25px" alt="img-profile"></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item pd-0" href="#"><i class="fas fa-user mr-3"></i>Profile</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item pd-0" href="#"><i class="fas fa-user-edit mr-3"></i>Edit Profile</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item pd-0" href="#"><i class="fas fa-coins mr-3"></i>Poin</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item pd-0" href="beranda.html"><i class="fas fa-sign-out-alt mr-3"></i>Keluar</a>
+              </div>
           </li>
         </ul>
       </div>
@@ -72,7 +79,7 @@
         <img class="d-block w-100 posisi" src="img/bumi.png" alt="tentang-pw">
         <div class="container">
           <div class="carousel-caption text-left">
-            <h1 class="display-4">BANG SAMPAH</h1>
+            <h1 class="display-4">BANG SAMPAH </h1>
             <h4 class="mg-sm-btm">Tukar <span>sampahmu</span>, no <span>waste</span> anymore.</h4>
             <p><a class="btn btn-lg btn-edit" href="#about" role="button">Tentang Bang Sampah</a></p>
           </div>
